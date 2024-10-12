@@ -5,11 +5,11 @@
 
   - Intelij IDEA - https://www.jetbrains.com/ru-ru/idea/download/#section=windows or https://www.jetbrains.com/ru-ru/idea/download/download-thanks.html?platform=windows&code=IIC
 
-  - JDK & JRE - https://www.oracle.com/java/technologies/downloads/ or https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.msi
+  - JDK & JRE - https://www.oracle.com/java/technologies/downloads/ or https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.msi
 
-  - Maven - https://maven.apache.org/download.cgi or https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip
+  - Maven - https://maven.apache.org/download.cgi or https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.zip
 
-  - Chrome driver - https://chromedriver.chromium.org/downloads or https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/121.0.6167.85/win64/chromedriver-win64.zip
+  - Chrome driver - https://chromedriver.chromium.org/downloads or https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.100/win64/chromedriver-win64.zip
     
   - Firefox - https://github.com/mozilla/geckodriver/releases or https://github.com/mozilla/geckodriver/releases/download/v0.34.0/geckodriver-v0.34.0-win32.zip
 
