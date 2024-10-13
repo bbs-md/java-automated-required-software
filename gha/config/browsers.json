@@ -1,0 +1,28 @@
+{
+  "firefox": {
+    "default": "46.0",
+    "versions": {
+      "46.0": {
+        "image": "selenoid/firefox:46.0",
+        "port": "4444",
+        "tmpfs": {"/tmp": "size=512m"},
+        "path" : "/wd/hub",
+        "volumes" : ["/from:/to:ro"]
+      }
+    }
+  },
+  "chrome": {
+    "default": "128.0",
+    "versions": {
+      "128.0": {
+        "image": "selenoid/vnc_chrome:128.0",
+        "port": "4444",
+        "tmpfs": {"/tmp": "size=512m"},
+        "path" : "/",
+        "volumes" : ["/home/asnegur/selenoid:/home/selenium/Downloads"],
+        "vnc" : {"enabled": true},
+        "env" : ["ENABLE_VNC=true", "SCREEN_WIDTH=1920", "SCREEN_HEIGHT=1080", "VNC_PASSWORD=secret"]
+      }
+    }
+  }
+}
