@@ -13,10 +13,11 @@
     
   - Firefox - https://github.com/mozilla/geckodriver/releases or https://github.com/mozilla/geckodriver/releases/download/v0.34.0/geckodriver-v0.34.0-win32.zip
 
+  - Git - https://git-scm.com/downloads/win
 
 ## Setting system environment variables in `Windows` OS
 
-- Open `PowerShell` as Administrator and run commans
+- Open `PowerShell` as Administrator and run commands
 
 ```
 [Environment]::SetEnvironmentVariable("JAVA_HOME", "C:\Program Files\Java\jdk-14.0.2", "Machine")
