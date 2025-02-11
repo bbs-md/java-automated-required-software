@@ -17,8 +17,6 @@ public class SeleniumDriver {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
-//        driver = WebDriverManager.chromedriver().create();
-//        WebDriverManager.chromedriver().clearDriverCache().setup();
         return driver;
     }
 

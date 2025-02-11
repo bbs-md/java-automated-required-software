@@ -9,7 +9,7 @@
 
   - Maven - https://maven.apache.org/download.cgi or https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.zip
 
-  - Chrome driver - https://chromedriver.chromium.org/downloads or https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.100/win64/chromedriver-win64.zip
+  - Chrome driver - https://chromedriver.chromium.org/downloads or https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json or https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.100/win64/chromedriver-win64.zip
     
   - Firefox - https://github.com/mozilla/geckodriver/releases or https://github.com/mozilla/geckodriver/releases/download/v0.34.0/geckodriver-v0.34.0-win32.zip
 
