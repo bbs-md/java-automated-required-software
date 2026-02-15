@@ -31,27 +31,44 @@ jobs:
           docker compose -f docker-compose up -d
 
       - name: Wait for container to start
-        run: sleep 1
+        run: sleep 5
 
       - name: Wait selenoid status
-        run: curl http://127.0.0.1:4444/status
+        run: |
+          timeout 30 bash -c 'until curl -f http://127.0.0.1:4444/status; do sleep 2; done'
+          echo "Selenoid is ready!"
 
       - name: Build with Maven
         run: mvn test
 
+      - name: Check video directory
+        if: always()
+        run: |
+          echo "Video directory contents:"
+          ls -lah ./video || echo "Video directory not found"
+
+      - name: Show Selenoid logs
+        if: always()
+        run: |
+          echo "Selenoid logs:"
+          docker logs demoqa-selenoid-1 | tail -50
+
       - name: Uploading report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: report
           path: ./target/surefire-reports/html
 
       - name: Uploading video
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: video
           path: ./video
 
       - name: Uploading logs
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: logs
